@@ -1,0 +1,83 @@
+:root {
+    --color-1: #A8822B;
+    --color-2: #7C6735;
+    --color-3: #535353;
+}
+
+body * {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#main-grid {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    grid-template-rows: 200px 1fr 50px;
+} 
+
+#header {
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 60px;
+}
+#header img {
+    margin-left: 100px;
+}
+
+#blink-color {
+    color: #ff0000;
+}
+
+#welcome-screen {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-1);
+}
+
+#footer {
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 0px;
+    width: 600px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 0px;
+    background-color: var(--color-2);
+    color: white;
+    cursor: pointer;
+}
