@@ -19,7 +19,8 @@
         <div id="main-grid">
             <div id="header">
                 <img src="img/Library.svg" alt="Library" id="library-logo" width="400px">
-                <img src="img/book1.jpeg" alt="Book" id="book-logo" width="400px">
+                <img src="img/book1.jpeg" alt="Book" id="book-logo" width="100px">
+                <img src="img/book1.jpeg" alt="Book" id="book-logo" width="100px">
             </div>
 
 
@@ -35,15 +36,29 @@
 
                 <div id="checkout-screen" class="screen hidden">
                     <div id="error">
-                        ERROR!!: Could not load <code>book_name_barcode_table.sql</code>.
-                        <br>
-                        Falling back to <code>book_description_barcode_table.sql</code>
+                        <p>
+                            ERROR!!: Could not load <code>book_name_barcode_table.sql</code>.
+                            <br>
+                            Falling back to <code>book_description_barcode_table.sql</code>
+                        </p>
+                    </div>
+
+                    <div id="input-container">
+                        <p>Scan the barcode of the book you wish to check out</p>
+                        <input type="text" id="barcode-input" placeholder="Scan barcode">
+                        <button id="checkout-button" onclick="checkout()">Checkout</button>
+                    </div>  
+
+                    <div id="items-to-checkout">
+                        <h2>Items to checkout (in order)</h2>
+                        <ul id="checkout-list">
+                        </ul>
                     </div>
                 </div>
 
 
                 <div id="end-screen" class="screen hidden">
-
+                    Bazinga! YOU WIN!
                 </div>
             </div>
 
