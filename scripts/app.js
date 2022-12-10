@@ -36,6 +36,9 @@ function setScreen(screen) {
 
     if (screen == "checkout") {
         startCheckout();
+    } else if (screen == "end") {
+        // Navigate to the localhost:8000
+        window.location.href = "http://localhost:8000";
     }
 }
 
